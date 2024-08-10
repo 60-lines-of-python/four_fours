@@ -206,7 +206,7 @@ The main entrypoint times the calculation and performs a double check using pyth
         niceness = sum(x[1] for x in s4.values())
         print(f'length: {len(s4)}, total niceness {niceness} (avg: {round(niceness / len(s4), 3)})')
 
-The ``s4`` dictionary uses s dictionary comprehension to get the expressions that were found
+The ``s4`` dictionary uses a dictionary comprehension to get the expressions that were found
 that are in the range I care about (0 to 100). A string replace of ``.4~`` with (4/9) along with
 the importing ``sqrt`` and the factorial function as ``fac`` ensure that the expression is legal python.
 The expression is printed out, with a warning of exclamation marks if the evaluation of the expression
@@ -328,7 +328,7 @@ In approximate order of difficulty:
 * Change the niceness scores to match your tastes.
 * Add other unary or binary operators. Or remove some. What's the minimum set of
   operators that will yield an expression for each value 0-100?
-* In the function ``fours()``, Ar all the function
+* In the function ``fours()``, are all the function
   calls to ``apply_binary`` necessary to find the nicest expressions?
   Or what combination results in the fastest complete result (even if it's not the nicest)?
 * If a value has multiple expressions with the minimum niceness score,
